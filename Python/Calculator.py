@@ -8,24 +8,27 @@ class Calculator:
 
     def subtract(self, number):
         self.value -= number
+        return self.value
 
     def multiply(self, number):
-        self.value == number 
+        self.value *= number
+        return self.value
 
     def divide(self, number):
-        if number == 0:  
+        if number == 0:
             print("Division by zero is not allowed!")
         else:
             self.value /= number
+        return self.value
 
     def modulo(self, number):
-        return self.value // number 
+        return self.value % number
 
 
 calc = Calculator(10)
 
-print(calc.add(5))       
-print(calc.subtract(3))  
-print(calc.multiply(4))  
-print(calc.divide(0))     
-print(calc.modulo(3))     
+print(calc.add(5))
+print(calc.subtract(3))
+print(calc.multiply(4))
+print(calc.divide(0))
+print(calc.modulo(3))
